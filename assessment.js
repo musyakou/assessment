@@ -21,7 +21,14 @@
         if (userName === '') { // 名前が空の時は処理を終了する,　userName.length === 0;が代替
             return;
         };
-
+    };
+        userNameInput.onkeydown = (event) => {
+            if (event.keyCode === 13) {
+                Button.onclick();
+            }
+        };
+        
+        
         //まず診断結果をでてたら消す処理
         function removeAllChildren(element) {
             while (element.firstChild) {//子供の要素がある限り削除
@@ -62,11 +69,7 @@
         tweetDivided.appendChild(anchor);
         twttr.widgets.load();
       
-        userNameInput.onkeydown = (event) => {
-            if (event.keyCode === 13) {
-                Button.onclick();
-            }
-        };
+        
     };
 
     const answers = [
