@@ -16,6 +16,7 @@
 
 
 
+    
     Button.onclick = () => {
         const userName = userNameInput.value;
         if (userName === '') { // 名前が空の時は処理を終了する,　userName.length === 0;が代替
