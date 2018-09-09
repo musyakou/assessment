@@ -22,7 +22,7 @@
         if (userName === '') { // 名前が空の時は処理を終了する,　userName.length === 0;が代替
             return;
         };
-    };
+
         userNameInput.onkeydown = (event) => {
             if (event.keyCode === 13) {
                 Button.onclick();
